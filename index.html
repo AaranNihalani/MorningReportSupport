@@ -3,121 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Morning Report | Financial Clarity</title>
+    <title>The Morning Report | Intelligent Financial Briefings</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="app-icon.png">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html">
-                <!-- Using logo_text.png as requested for brand identity -->
-                <img src="logo_text.png" alt="The Morning Report" class="nav-logo" style="filter: brightness(0) invert(1);">
+            <a href="#" class="nav-logo-link">
+                <img src="logo.png" alt="The Morning Report" class="nav-logo">
             </a>
             <div class="nav-links">
                 <a href="#features" class="nav-link">Features</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary">Download App</a>
+                <a href="mailto:aaran@themorningreport.co.uk" class="nav-link">Contact</a>
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary btn-download-sm">
+                    Download App
+                </a>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="bg-glow"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Financial Clarity,<br>Every Morning.</h1>
-                <p>AI-curated market intelligence that cuts through the noise. Get the critical insights you need to start your trading day, in seconds.</p>
-                <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: flex-start;">
-                    <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary">
-                        <i class="fab fa-apple" style="margin-right: 8px;"></i> Download on iOS
-                    </a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Your Daily <span class="text-gradient">Financial Pulse</span> Delivered Intelligently.</h1>
+                    <p>Stop drowning in noise. Get a hyper-personalized, AI-curated briefing of the market moves that actually impact your portfolio.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary">
+                            <i class="fab fa-apple"></i> Download on iOS
+                        </a>
+                        <a href="#how-it-works" class="btn btn-secondary">
+                            How it Works
+                        </a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <!-- Placeholder for App Store Badge if needed later -->
+                    </div>
                 </div>
+
+                <div class="hero-visual">
+                    <div class="app-card">
+                        <img src="app-icon.png" alt="App Icon" class="app-icon-lg">
+                        
+                        <!-- Floating Cards for Effect -->
+                        <div class="float-card float-1">
+                            <i class="fas fa-arrow-trend-up trend-up"></i>
+                            <div>
+                                <strong>AAPL</strong>
+                                <span class="trend-up">+2.4%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="float-card float-2">
+                            <i class="fas fa-newspaper" style="color: var(--accent);"></i>
+                            <div>
+                                <strong>New Briefing</strong>
+                                <span style="color: var(--text-muted); font-size: 0.8rem; display: block;">Ready for you</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>10k+</h3>
+                    <p>News Sources Scanned</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Market Monitoring</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Personalized to You</p>
+                </div>
+                <div class="stat-item">
+                    <h3>0s</h3>
+                    <p>Wasted Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>From your portfolio to your inbox in three simple steps.</p>
             </div>
             
-            <div class="hero-visual">
-                <div class="app-card">
-                    <!-- Using the high-res app icon as the main visual anchor -->
-                    <img src="app-icon.png" alt="The Morning Report App Icon" class="app-icon-lg">
-                    
-                    <!-- Floating Tech Elements -->
-                    <div class="float-card float-1">
-                        <i class="fas fa-arrow-trend-up trend-up"></i>
-                        <div>
-                            <strong style="display: block; font-size: 0.9rem;">Market Sentiment</strong>
-                            <span style="color: var(--success); font-size: 0.8rem;">Bullish +2.4%</span>
-                        </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-layer-group"></i>
+                        <div class="step-number">1</div>
                     </div>
-                    
-                    <div class="float-card float-2">
-                        <i class="fas fa-robot" style="color: var(--accent);"></i>
-                        <div>
-                            <strong style="display: block; font-size: 0.9rem;">AI Analysis</strong>
-                            <span style="color: var(--text-muted); font-size: 0.8rem;">Processing...</span>
-                        </div>
+                    <h3>Connect Your Portfolio</h3>
+                    <p>Add your stocks and sectors. We support thousands of tickers and global markets.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-filter"></i>
+                        <div class="step-number">2</div>
                     </div>
+                    <h3>AI Filters the Noise</h3>
+                    <p>Our algorithms scan 10,000+ sources, removing clickbait and irrelevant "fluff" to find what matters.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div class="step-number">3</div>
+                    </div>
+                    <h3>Get Your Briefing</h3>
+                    <p>Receive a concise "Morning Report" PDF or email, perfectly timed to your local morning routine.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="stats-section">
-        <div class="container stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">10k+</div>
-                <div class="stat-label">Sources Analyzed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Market Monitoring</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Data Privacy</div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Intelligent Markets</h2>
-                <p>Built for investors who value time and precision.</p>
+                <h2>Built for the Modern Investor</h2>
+                <p>We believe staying informed shouldn't be a full-time job. Our technology does the heavy lifting so you can focus on decisions.</p>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
+                    <div class="icon-box">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Your portfolio is unique. Select exactly which tickers (AAPL, TSLA, etc.) and sectors you care about.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>AI-Driven Curation</h3>
-                    <p>Our advanced algorithms scan thousands of financial news sources to bring you only the most impactful stories moving the markets.</p>
+                    <h3>Smart Noise Filtering</h3>
+                    <p>We automatically filter out low-value content like "photos of the week" and horoscopes, delivering only high-signal financial intelligence.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Dynamic Editions</h3>
+                    <p>Whether it's the Morning, Afternoon, or Evening Report, get the right context for the time of day, adapted to your timezone.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">
+                    <div class="icon-box">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Instant Briefings</h3>
-                    <p>Wake up to a concise, actionable summary. No fluff, just the key data points and narratives you need to know.</p>
+                    <h3>Real-Time Alerts</h3>
+                    <p>Never miss a critical movement. Set custom thresholds for the assets that matter most to you.</p>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-halved"></i>
+                    <div class="icon-box">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Privacy First</h3>
-                    <p>Your data is yours. We don't track your portfolio or sell your reading habits. Pure market intelligence, securely delivered.</p>
+                    <p>Your data stays yours. We don't sell your portfolio data to third parties. Ever.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF & Email Delivery</h3>
+                    <p>Get a beautifully formatted PDF report delivered straight to your inbox. Perfect for offline reading.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="faq-section">
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
@@ -125,71 +212,88 @@
             
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h4>Is The Morning Report free?</h4>
-                    <p>Yes, the core daily briefing is free to access. We offer premium features for deep-dive analysis and real-time alerts.</p>
+                    <h4>How do I manage my watchlist?</h4>
+                    <p>Simply navigate to the "Watchlist" tab in the app. You can add stocks by symbol (e.g., AAPL) or company name, and remove them with a swipe.</p>
                 </div>
-                
                 <div class="faq-item">
-                    <h4>What markets do you cover?</h4>
-                    <p>We cover major global indices (S&P 500, FTSE 100, Nikkei), commodities, forex, and major crypto assets.</p>
+                    <h4>Is the app free?</h4>
+                    <p>Yes, The Morning Report is free to download and use. We are supported by privacy-conscious advertising that keeps our servers running.</p>
                 </div>
-                
+                <div class="faq-item">
+                    <h4>Where does the news come from?</h4>
+                    <p>We aggregate data from thousands of reputable financial news outlets, regulatory filings, and market data providers via Financial Modeling Prep.</p>
+                </div>
                 <div class="faq-item">
                     <h4>How do I contact support?</h4>
-                    <p>You can reach our support team anytime at <a href="mailto:aaran@themorningreport.co.uk" style="color: var(--accent);">aaran@themorningreport.co.uk</a>.</p>
+                    <p>You can email us directly at <a href="mailto:aaran@themorningreport.co.uk" style="color: var(--accent);">aaran@themorningreport.co.uk</a>. We typically respond within 24 hours.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-container">
+                <h2>Start Your Day Smarter</h2>
+                <p>Join thousands of investors who trust The Morning Report for their daily financial intelligence.</p>
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-secondary">
+                    <i class="fab fa-apple"></i> Download Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo_text.png" alt="The Morning Report" style="height: 24px; filter: brightness(0) invert(1);">
-                    <p>Empowering investors with clarity in a complex world.</p>
+                    <img src="logo.png" alt="The Morning Report" style="height: 32px; filter: grayscale(100%); opacity: 0.8;">
+                    <p>Intelligent financial briefings for the modern investor.</p>
                 </div>
                 
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921">Download</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="mailto:aaran@themorningreport.co.uk">Support</a></li>
-                            <li><a href="#">Twitter</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:aaran@themorningreport.co.uk">Support</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="copyright">
-                &copy; 2026 The Morning Report. All rights reserved.
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Morning Report. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
+
     <script>
-        // Simple scroll effect for navbar
+        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 20) {
-                navbar.style.background = 'rgba(11, 15, 25, 0.95)';
-                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.05)';
             } else {
-                navbar.style.background = 'rgba(11, 15, 25, 0.8)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.8)';
                 navbar.style.boxShadow = 'none';
             }
         });
