@@ -3,51 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Morning Report - App Support</title>
+    <title>The Morning Report - Your Daily Financial Pulse</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>The Morning Report</h1>
-            <p class="subtitle">Your daily personalized financial briefing</p>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">The Morning Report</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn-download-nav">Download</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Your Daily Personalised Financial Briefing</h1>
+            <p class="hero-subtitle">Smart curation. Instant market snapshots. The news that matters to your portfolio.</p>
+            <div class="hero-buttons">
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn-primary"><i class="fab fa-apple"></i> Download on App Store</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
     </header>
 
-    <div class="container">
-        <section id="support">
-            <h2>App Support</h2>
-            <p>Need help with The Morning Report? We're here to assist you.</p>
-            
-            <h3>Frequently Asked Questions</h3>
-            
-            <div class="faq-item">
-                <h4>How do I change my tracked stocks?</h4>
-                <p>Go to the "Watchlist" tab in the app to add or remove company tickers.</p>
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why The Morning Report?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-newspaper"></i></div>
+                    <h3>Personalised Briefing</h3>
+                    <p>Start your day with a concise summary of the financial news that impacts your specific watchlist. No noise, just insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-brain"></i></div>
+                    <h3>Smart Curation</h3>
+                    <p>Our advanced algorithms filter through thousands of sources to bring you the most relevant market movers and trends.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                    <h3>Market Snapshot</h3>
+                    <p>Get an instant overview of top gainers, losers, and major indices. Visualize market sentiment at a glance.</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="faq-item">
-                <h4>Why are ads showing?</h4>
-                <p>The free version of The Morning Report is supported by privacy-conscious advertising.</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Designed for the Modern Investor</h2>
+                <p>The Morning Report was built to solve a simple problem: too much information, too little time. We believe that staying informed shouldn't mean drowning in data.</p>
+                <p>Whether you're a seasoned trader or just starting your investment journey, our app provides the clarity you need to make informed decisions before the market opens.</p>
             </div>
+        </div>
+    </section>
 
-            <h3>Contact Us</h3>
-            <p>If you have found a bug or have a feature request, please email our support team.</p>
-            <a href="mailto:aaran.nihalani@gmail.com" class="contact-btn">Email Support</a>
-        </section>
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do I change my tracked stocks?</h4>
+                    <p>Simply navigate to the "Watchlist" tab within the app to add or remove company tickers from your personalized feed.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Why am I seeing ads?</h4>
+                    <p>The free version of The Morning Report is supported by privacy-conscious advertising to keep our servers running.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How is the news curated?</h4>
+                    <p>Our smart algorithms scan thousands of financial news sources and filter them based on relevance to your specific watchlist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="links">
-            <h2>Legal</h2>
-            <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </section>
-    </div>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions, feedback, or feature requests? We'd love to hear from you.</p>
+            <a href="mailto:aaran@themorningreport.co.uk" class="contact-email">aaran@themorningreport.co.uk</a>
+            
+            <div class="support-links">
+                <h3>Support & Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:aaran@themorningreport.co.uk">App Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="container">
+        <div class="container footer-content">
             <p>&copy; 2026 The Morning Report. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Add social links if available -->
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
