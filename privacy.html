@@ -6,43 +6,41 @@
     <title>Privacy Policy - The Morning Report</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="app-icon.png">
     <style>
         .page-header {
-            padding-top: 140px;
-            padding-bottom: 60px;
+            padding-top: 180px;
+            padding-bottom: 80px;
             text-align: center;
-            background-color: var(--bg-light);
-            border-bottom: 1px solid #e2e8f0;
+            background: radial-gradient(circle at top center, rgba(37,99,235,0.1) 0%, rgba(11,15,25,0) 70%);
         }
         
         .page-header h1 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 16px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .page-header .subtitle {
             color: var(--text-muted);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         
         .privacy-content {
-            padding: 60px 0;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: var(--bg-white);
-            border-radius: 24px;
-            box-shadow: var(--shadow-sm);
-            padding: 40px;
-            margin-top: -30px;
-            margin-bottom: 60px;
-            position: relative;
-            z-index: 10;
+            padding: 60px;
+            max-width: 900px;
+            margin: 0 auto 100px;
+            background-color: var(--secondary);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: var(--shadow-lg);
         }
         
         .privacy-content h3 {
-            color: var(--primary);
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 16px;
             font-size: 1.5rem;
@@ -73,24 +71,31 @@
             color: var(--text-muted);
             margin-bottom: 30px;
             display: block;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
             padding-bottom: 20px;
+        }
+
+        .privacy-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .privacy-content a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="nav-logo-link">
-                <img src="logo.png" alt="The Morning Report" class="nav-logo">
+            <a href="index.html">
+                <img src="logo_text.png" alt="The Morning Report" class="nav-logo" style="filter: brightness(0) invert(1);">
             </a>
             <div class="nav-links">
                 <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#about" class="nav-link">About</a>
                 <a href="index.html#faq" class="nav-link">FAQ</a>
-                <a href="mailto:aaran@themorningreport.co.uk" class="nav-link">Contact</a>
-                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary btn-download-sm">
-                    Download App
-                </a>
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary">Download App</a>
             </div>
         </div>
     </nav>
@@ -127,7 +132,7 @@
             <h3>4. Third-Party Services</h3>
             <p>We share data with the following third-party partners to facilitate our services:</p>
             <ul>
-                <li><strong>Google Mobile Ads (AdMob):</strong> For delivering advertising. See <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: var(--accent);">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Mobile Ads (AdMob):</strong> For delivering advertising. See <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Privacy Policy</a>.</li>
                 <li><strong>Firebase (Google):</strong> For authentication and database services.</li>
                 <li><strong>Amazon Web Services (AWS):</strong> For backend processing and email delivery.</li>
             </ul>
@@ -137,22 +142,67 @@
 
             <h3>6. Contact Us</h3>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p><a href="mailto:aaran@themorningreport.co.uk" style="color: var(--accent); font-weight: 600;">aaran@themorningreport.co.uk</a></p>
+            <p><a href="mailto:aaran@themorningreport.co.uk">aaran@themorningreport.co.uk</a></p>
         </section>
 
         <div style="text-align: center; margin-bottom: 80px;">
             <a href="index.html" class="btn btn-secondary">
-                &larr; Back to Home
+                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Home
             </a>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-                <p>&copy; 2026 The Morning Report. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo_text.png" alt="The Morning Report" style="height: 24px; filter: brightness(0) invert(1);">
+                    <p>Empowering investors with clarity in a complex world.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:aaran@themorningreport.co.uk">Support</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 The Morning Report. All rights reserved.
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 20) {
+                navbar.style.background = 'rgba(11, 15, 25, 0.95)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+            } else {
+                navbar.style.background = 'rgba(11, 15, 25, 0.8)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
