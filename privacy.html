@@ -5,67 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - The Morning Report</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="app-icon.png">
     <style>
-        /* Specific overrides for privacy page */
         .page-header {
-            padding-top: 120px;
+            padding-top: 140px;
             padding-bottom: 60px;
             text-align: center;
-            background-color: var(--bg-color);
+            background-color: var(--bg-light);
             border-bottom: 1px solid #e2e8f0;
         }
         
         .page-header h1 {
             font-size: 2.5rem;
-            color: var(--primary-color);
+            color: var(--primary);
             margin-bottom: 10px;
+        }
+
+        .page-header .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
         }
         
         .privacy-content {
             padding: 60px 0;
             max-width: 800px;
             margin: 0 auto;
-            background-color: var(--white);
-            border-radius: 8px;
+            background-color: var(--bg-white);
+            border-radius: 24px;
             box-shadow: var(--shadow-sm);
             padding: 40px;
-            margin-top: -30px; /* Overlap effect if desired, or just margin */
+            margin-top: -30px;
             margin-bottom: 60px;
+            position: relative;
+            z-index: 10;
         }
         
         .privacy-content h3 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 15px;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 16px;
             font-size: 1.5rem;
         }
         
         .privacy-content ul {
             list-style-type: disc;
             padding-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
         
         .privacy-content li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        .privacy-content li strong {
+            color: var(--text-main);
         }
         
         .privacy-content p {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+        
+        .policy-date {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            display: block;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo"><a href="index.html">The Morning Report</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn-download-nav">Download</a></li>
-            </ul>
+            <a href="index.html" class="nav-logo-link">
+                <img src="logo.png" alt="The Morning Report" class="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="mailto:aaran@themorningreport.co.uk" class="nav-link">Contact</a>
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary btn-download-sm">
+                    Download App
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -78,7 +104,7 @@
 
     <div class="container">
         <section class="privacy-content">
-            <p class="policy-date">Last Updated: February 25, 2026</p>
+            <span class="policy-date">Last Updated: February 25, 2026</span>
 
             <h3>1. Introduction</h3>
             <p>Welcome to The Morning Report ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how your information is collected, used, and disclosed by The Morning Report mobile application.</p>
@@ -101,7 +127,7 @@
             <h3>4. Third-Party Services</h3>
             <p>We share data with the following third-party partners to facilitate our services:</p>
             <ul>
-                <li><strong>Google Mobile Ads (AdMob):</strong> For delivering advertising. See <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Mobile Ads (AdMob):</strong> For delivering advertising. See <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: var(--accent);">Google's Privacy Policy</a>.</li>
                 <li><strong>Firebase (Google):</strong> For authentication and database services.</li>
                 <li><strong>Amazon Web Services (AWS):</strong> For backend processing and email delivery.</li>
             </ul>
@@ -111,17 +137,21 @@
 
             <h3>6. Contact Us</h3>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p><a href="mailto:aaran@themorningreport.co.uk">aaran@themorningreport.co.uk</a></p>
+            <p><a href="mailto:aaran@themorningreport.co.uk" style="color: var(--accent); font-weight: 600;">aaran@themorningreport.co.uk</a></p>
         </section>
 
-        <div style="text-align: center; margin-bottom: 40px;">
-            <a href="index.html" class="btn-secondary">&larr; Back to Home</a>
+        <div style="text-align: center; margin-bottom: 80px;">
+            <a href="index.html" class="btn btn-secondary">
+                &larr; Back to Home
+            </a>
         </div>
     </div>
 
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 The Morning Report. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 The Morning Report. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
