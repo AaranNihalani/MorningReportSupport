@@ -180,7 +180,7 @@ section {
 }
 
 .nav-logo {
-    height: 40px; /* Adjust based on logo file */
+    height: 56px;
 }
 
 .nav-links {
@@ -265,6 +265,11 @@ section {
     background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
     border: 2px solid white;
     margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.75rem;
 }
 
 .avatar-stack span:first-child { margin-left: 0; }
@@ -287,11 +292,6 @@ section {
 .dashboard-card {
     width: 100%;
     max-width: 440px;
-    background: var(--bg-white);
-    border-radius: 28px;
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
-    border: 1px solid #EEF2F7;
-    overflow: hidden;
     position: relative;
     transform: rotateY(-8deg) rotateX(3deg);
     transition: transform 0.4s ease;
@@ -299,6 +299,15 @@ section {
 
 .dashboard-card:hover {
     transform: rotateY(0deg) rotateX(0deg);
+}
+
+.dashboard-inner {
+    background: var(--bg-white);
+    border-radius: 28px;
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    border: 1px solid #EEF2F7;
+    overflow: hidden;
+    position: relative;
 }
 
 .dashboard-banner {
