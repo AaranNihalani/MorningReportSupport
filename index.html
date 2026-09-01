@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Morning Report | Intelligent Financial Briefings</title>
+    <title>The Morning Report | Reliable News, On Your Terms</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="The Morning Report delivers reliable, personalized daily news briefings for young people — cutting through social media misinformation with trusted sources, in under two minutes a day.">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="icon" type="image/png" href="app-icon-web.png">
 </head>
 <body>
 
@@ -18,13 +19,14 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="nav-logo-link">
-                <img src="logo.png" alt="The Morning Report" class="nav-logo">
+                <img src="logo-web.png" alt="The Morning Report" class="nav-logo">
             </a>
             <div class="nav-links">
+                <a href="#mission" class="nav-link">Our Mission</a>
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#how-it-works" class="nav-link">How it Works</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="mailto:aaran@themorningreport.co.uk" class="nav-link">Contact</a>
+                <a href="mailto:themorningreportinitiative@gmail.com" class="nav-link">Contact</a>
                 <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary btn-download-sm">
                     Download App
                 </a>
@@ -34,44 +36,111 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-glow"></div>
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-content">
-                    <h1>Your Daily <span class="text-gradient">Financial Pulse</span> Delivered Intelligently.</h1>
-                    <p>Stop drowning in noise. Get a hyper-personalized, AI-curated briefing of the market moves that actually impact your portfolio.</p>
-                    
+                <div class="hero-content reveal">
+                    <div class="eyebrow"><i class="fas fa-wand-magic-sparkles"></i> Trusted news, not influencer opinions</div>
+                    <h1>Reliable News, <span class="text-gradient">On Your Terms.</span></h1>
+                    <p>Social feeds weren't built to inform you — they were built to hold your attention. The Morning Report delivers a personalized, trustworthy daily briefing so you can form your own opinions in under two minutes.</p>
+
                     <div class="hero-buttons">
                         <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary">
                             <i class="fab fa-apple"></i> Download on iOS
                         </a>
                         <a href="#how-it-works" class="btn btn-secondary">
-                            How it Works
+                            See How it Works
                         </a>
                     </div>
 
-                    <div class="hero-badges">
-                        <!-- Placeholder for App Store Badge if needed later -->
+                    <div class="hero-trust-row">
+                        <div class="avatar-stack">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <p>Built with students, for the next generation of informed readers.</p>
                     </div>
                 </div>
 
-                <div class="hero-visual">
-                    <div class="app-card">
-                        <img src="app-icon.png" alt="App Icon" class="app-icon-lg">
-                        
-                        <!-- Floating Cards for Effect -->
-                        <div class="float-card float-1">
-                            <i class="fas fa-arrow-trend-up trend-up"></i>
-                            <div>
-                                <strong>AAPL</strong>
-                                <span class="trend-up">+2.4%</span>
+                <div class="hero-visual reveal">
+                    <div class="dashboard-card" id="tiltCard">
+                        <div class="dashboard-banner">
+                            <div class="dashboard-banner-blob"></div>
+                            <div class="dashboard-banner-text">
+                                <span class="dashboard-eyebrow">Daily Brief</span>
+                                <h4>The Morning Report</h4>
+                                <p>A compact news and market dashboard, tailored to you.</p>
+                                <div class="dashboard-pills">
+                                    <span class="pill">1 SEP 2026</span>
+                                    <span class="pill">7:00 AM</span>
+                                    <span class="pill">8 MOVERS</span>
+                                </div>
+                            </div>
+                            <img src="app-icon-web.png" alt="The Morning Report" class="dashboard-banner-icon">
+                        </div>
+
+                        <div class="dashboard-body">
+                            <div class="dashboard-panel">
+                                <span class="dashboard-panel-label"><i class="fas fa-satellite-dish"></i> Top Headlines</span>
+                                <div class="dashboard-row">
+                                    <span class="dashboard-row-num">1</span>
+                                    <div class="dashboard-row-text">
+                                        <strong>Central banks hold rates steady amid inflation watch</strong>
+                                        <span>reuters.com</span>
+                                    </div>
+                                    <span class="dashboard-open">Open</span>
+                                </div>
+                                <div class="dashboard-row">
+                                    <span class="dashboard-row-num">2</span>
+                                    <div class="dashboard-row-text">
+                                        <strong>Global leaders resume talks on trade policy</strong>
+                                        <span>apnews.com</span>
+                                    </div>
+                                    <span class="dashboard-open">Open</span>
+                                </div>
+                                <div class="dashboard-row">
+                                    <span class="dashboard-row-num">3</span>
+                                    <div class="dashboard-row-text">
+                                        <strong>AI power demand keeps exploding worldwide</strong>
+                                        <span>seekingalpha.com</span>
+                                    </div>
+                                    <span class="dashboard-open">Open</span>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-panel">
+                                <span class="dashboard-panel-label"><i class="fas fa-chart-line"></i> Watchlist Movers</span>
+                                <div class="dashboard-stock-row">
+                                    <span class="ticker">AAPL</span>
+                                    <span class="price">$316.85</span>
+                                    <span class="change-pill down">-0.89%</span>
+                                </div>
+                                <div class="dashboard-stock-row">
+                                    <span class="ticker">TSLA</span>
+                                    <span class="price">$367.95</span>
+                                    <span class="change-pill up">+5.51%</span>
+                                </div>
+                                <div class="dashboard-stock-row">
+                                    <span class="ticker">NVDA</span>
+                                    <span class="price">$220.78</span>
+                                    <span class="change-pill up">+1.48%</span>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="float-card float-2">
-                            <i class="fas fa-newspaper" style="color: var(--accent);"></i>
+
+                        <!-- Floating Cards for Effect -->
+                        <div class="float-card float-1">
+                            <i class="fas fa-shield-halved" style="color: var(--success);"></i>
                             <div>
-                                <strong>New Briefing</strong>
-                                <span style="color: var(--text-muted); font-size: 0.8rem; display: block;">Ready for you</span>
+                                <strong>Verified Sources</strong>
+                                <span style="color: var(--text-muted); font-size: 0.8rem; display: block;">Every story, referenced</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card float-2">
+                            <i class="fas fa-clock" style="color: var(--accent);"></i>
+                            <div>
+                                <strong>&lt; 2 min read</strong>
+                                <span style="color: var(--text-muted); font-size: 0.8rem; display: block;">Delivered at 7am</span>
                             </div>
                         </div>
                     </div>
@@ -84,21 +153,48 @@
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>10k+</h3>
+                <div class="stat-item reveal">
+                    <h3 data-count="10000" data-suffix="+">0</h3>
                     <p>News Sources Scanned</p>
                 </div>
-                <div class="stat-item">
-                    <h3>24/7</h3>
+                <div class="stat-item reveal">
+                    <h3 data-count="24" data-suffix="/7">0</h3>
                     <p>Market Monitoring</p>
                 </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
+                <div class="stat-item reveal">
+                    <h3 data-count="100" data-suffix="%">0</h3>
                     <p>Personalized to You</p>
                 </div>
-                <div class="stat-item">
-                    <h3>0s</h3>
-                    <p>Wasted Time</p>
+                <div class="stat-item reveal">
+                    <h3 data-count="2" data-suffix=" min">0</h3>
+                    <p>To Stay Informed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-visual reveal">
+                    <div class="mission-card noise-card">
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <strong>Influencer Opinion</strong>
+                        <span>Unverified &middot; No sources &middot; Built to go viral</span>
+                    </div>
+                    <div class="mission-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="mission-card signal-card">
+                        <i class="fas fa-circle-check"></i>
+                        <strong>The Morning Report</strong>
+                        <span>Reputable outlets &middot; Referenced &middot; Built to inform</span>
+                    </div>
+                </div>
+                <div class="mission-content reveal">
+                    <div class="eyebrow"><i class="fas fa-graduation-cap"></i> Why we built this</div>
+                    <h2>Millions of young people get their news from an algorithm optimized for attention, not accuracy.</h2>
+                    <p>We've seen firsthand how misleading, biased, or simply false information spreads through social media. The Morning Report gives you the "news will find me" convenience you're used to — without handing your understanding of the world over to an influencer.</p>
+                    <p>Every headline is sourced from reputable outlets and linked back to the original article, so you can form your own opinions, dig deeper into what interests you, and build the media literacy that matters in every area of life.</p>
                 </div>
             </div>
         </div>
@@ -107,37 +203,37 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2>How It Works</h2>
-                <p>From your portfolio to your inbox in three simple steps.</p>
+                <p>From the world's news to your inbox, in three simple steps.</p>
             </div>
-            
+
             <div class="steps-grid">
-                <div class="step-card">
+                <div class="step-card reveal">
                     <div class="step-icon">
-                        <i class="fas fa-layer-group"></i>
+                        <i class="fas fa-sliders-h"></i>
                         <div class="step-number">1</div>
                     </div>
-                    <h3>Connect Your Portfolio</h3>
-                    <p>Add your stocks and sectors. We support thousands of tickers and global markets.</p>
+                    <h3>Set Your Interests</h3>
+                    <p>Pick the regions, sectors, trends and stocks you care about. Everyone's report is different.</p>
                 </div>
-                
-                <div class="step-card">
+
+                <div class="step-card reveal">
                     <div class="step-icon">
                         <i class="fas fa-filter"></i>
                         <div class="step-number">2</div>
                     </div>
-                    <h3>AI Filters the Noise</h3>
-                    <p>Our algorithms scan 10,000+ sources, removing clickbait and irrelevant "fluff" to find what matters.</p>
+                    <h3>We Filter the Noise</h3>
+                    <p>We scan thousands of reputable sources, cut the clickbait, and keep only what's reliable and relevant to you.</p>
                 </div>
-                
-                <div class="step-card">
+
+                <div class="step-card reveal">
                     <div class="step-icon">
                         <i class="fas fa-envelope-open-text"></i>
                         <div class="step-number">3</div>
                     </div>
-                    <h3>Get Your Briefing</h3>
-                    <p>Receive a concise "Morning Report" PDF or email, perfectly timed to your local morning routine.</p>
+                    <h3>Get Your Report</h3>
+                    <p>5 general headlines, your stock overview, and 5 personalized stories — delivered by push or email, right on time.</p>
                 </div>
             </div>
         </div>
@@ -146,58 +242,94 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <div class="section-header">
-                <h2>Built for the Modern Investor</h2>
-                <p>We believe staying informed shouldn't be a full-time job. Our technology does the heavy lifting so you can focus on decisions.</p>
+            <div class="section-header reveal">
+                <h2>Built to Inform, Not Distract</h2>
+                <p>Staying genuinely informed shouldn't take your whole morning — or come from an algorithm optimized for engagement over accuracy.</p>
             </div>
 
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon-box">
                         <i class="fas fa-sliders-h"></i>
                     </div>
                     <h3>Fully Customizable</h3>
-                    <p>Your portfolio is unique. Select exactly which tickers (AAPL, TSLA, etc.) and sectors you care about.</p>
+                    <p>Choose your stocks, sectors, regions and trends. Your report reflects what you actually care about.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon-box">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-shield-halved"></i>
                     </div>
-                    <h3>Smart Noise Filtering</h3>
-                    <p>We automatically filter out low-value content like "photos of the week" and horoscopes, delivering only high-signal financial intelligence.</p>
+                    <h3>Verified & Referenced</h3>
+                    <p>Every headline links back to a reputable source, so you can dig deeper and check the facts yourself.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon-box">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Dynamic Editions</h3>
-                    <p>Whether it's the Morning, Afternoon, or Evening Report, get the right context for the time of day, adapted to your timezone.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="icon-box">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Real-Time Alerts</h3>
-                    <p>Never miss a critical movement. Set custom thresholds for the assets that matter most to you.</p>
+                    <h3>Timed to You</h3>
+                    <p>Choose when your report lands — get a fresh briefing timed to your morning routine, in your timezone.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card reveal">
+                    <div class="icon-box">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <h3>Stock Watchlist</h3>
+                    <p>Track how your chosen stocks moved in the last 24 hours, alongside the news driving those moves.</p>
+                </div>
+
+                <div class="feature-card reveal">
                     <div class="icon-box">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Privacy First</h3>
-                    <p>Your data stays yours. We don't sell your portfolio data to third parties. Ever.</p>
+                    <p>Your data stays yours. We don't sell your information to third parties. Ever.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon-box">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>PDF & Email Delivery</h3>
-                    <p>Get a beautifully formatted PDF report delivered straight to your inbox. Perfect for offline reading.</p>
+                    <h3>Built for Learning</h3>
+                    <p>Designed to help you build media literacy and financial confidence — not just read headlines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>What Students Are Saying</h2>
+                <p>Real feedback from users since our launch in February 2026.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"As a new boy in year 9, I find The Morning Report extremely helpful to keep me updated on what's going on around the world. It lets you customise which news topics, stocks and countries you want to know about, which is super easy to do."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">Y9</div>
+                        <div>
+                            <strong>Year 9 Student</strong>
+                            <span>United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"I've often been wary of receiving news through social media, which may not be reliable. With The Morning Report I can trust the news I receive is reliable and from reputable sources, and I can verify that myself with the referencing in the report."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">Y12</div>
+                        <div>
+                            <strong>Year 12 Student</strong>
+                            <span>United Kingdom</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,26 +338,34 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2>Frequently Asked Questions</h2>
             </div>
-            
+
             <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>How do I manage my watchlist?</h4>
-                    <p>Simply navigate to the "Watchlist" tab in the app. You can add stocks by symbol (e.g., AAPL) or company name, and remove them with a swipe.</p>
+                <div class="faq-item reveal">
+                    <h4>Is this just for investors?</h4>
+                    <p>Not at all. Every report leads with general headlines covering world events, politics and trends — your stock watchlist is one personalized section within it, not the whole product.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
+                    <h4>Where does the news come from?</h4>
+                    <p>We aggregate stories from thousands of reputable news outlets and market data providers. Every headline links back to the original source so you can verify it yourself.</p>
+                </div>
+                <div class="faq-item reveal">
                     <h4>Is the app free?</h4>
                     <p>Yes, The Morning Report is free to download and use. We are supported by privacy-conscious advertising that keeps our servers running.</p>
                 </div>
-                <div class="faq-item">
-                    <h4>Where does the news come from?</h4>
-                    <p>We aggregate data from thousands of reputable financial news outlets, regulatory filings, and market data providers via Financial Modeling Prep.</p>
+                <div class="faq-item reveal">
+                    <h4>How do I manage my watchlist?</h4>
+                    <p>Navigate to the "Watchlist" tab in the app. You can add stocks by symbol (e.g., AAPL) or company name, and remove them with a swipe.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <h4>How do I contact support?</h4>
-                    <p>You can email us directly at <a href="mailto:aaran@themorningreport.co.uk" style="color: var(--accent);">aaran@themorningreport.co.uk</a>. We typically respond within 24 hours.</p>
+                    <p>You can email us directly at <a href="mailto:themorningreportinitiative@gmail.com" style="color: var(--accent);">themorningreportinitiative@gmail.com</a>. We typically respond within 24 hours.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4>Can my school or organization partner with you?</h4>
+                    <p>Yes — we're actively looking to partner with schools and educators to help students build financial and media literacy. Reach out and let's talk.</p>
                 </div>
             </div>
         </div>
@@ -234,9 +374,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-container">
-                <h2>Start Your Day Smarter</h2>
-                <p>Join thousands of investors who trust The Morning Report for their daily financial intelligence.</p>
+            <div class="cta-container reveal">
+                <h2>Start Your Day Informed</h2>
+                <p>Join students and curious minds who trust The Morning Report to cut through the noise, every morning.</p>
                 <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-secondary">
                     <i class="fab fa-apple"></i> Download Now
                 </a>
@@ -249,19 +389,20 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.png" alt="The Morning Report" style="height: 32px; filter: grayscale(100%); opacity: 0.8;">
-                    <p>Intelligent financial briefings for the modern investor.</p>
+                    <img src="logo-web.png" alt="The Morning Report" style="height: 32px; filter: grayscale(100%); opacity: 0.8;">
+                    <p>Reliable, personalized daily news briefings for the next generation of informed readers.</p>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Product</h4>
                     <ul>
+                        <li><a href="#mission">Our Mission</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How it Works</a></li>
                         <li><a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921">Download</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
@@ -269,34 +410,79 @@
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="mailto:aaran@themorningreport.co.uk">Support</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="mailto:themorningreportinitiative@gmail.com">Support</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2026 The Morning Report. All rights reserved.</p>
+                <p>&copy; 2026 The Morning Report Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
             if (window.scrollY > 20) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.05)';
+                navbar.classList.add('scrolled');
             } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-                navbar.style.boxShadow = 'none';
+                navbar.classList.remove('scrolled');
             }
         });
+
+        // Scroll-triggered reveal animations
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // Animated stat counters
+        const statEls = document.querySelectorAll('.stat-item h3[data-count]');
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = parseInt(el.dataset.count, 10);
+                const suffix = el.dataset.suffix || '';
+                const duration = 1400;
+                const start = performance.now();
+                function tick(now) {
+                    const progress = Math.min((now - start) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.round(target * eased).toLocaleString() + suffix;
+                    if (progress < 1) requestAnimationFrame(tick);
+                }
+                requestAnimationFrame(tick);
+                statObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        statEls.forEach(el => statObserver.observe(el));
+
+        // Subtle mouse-tracked tilt on hero card
+        const tiltCard = document.getElementById('tiltCard');
+        if (tiltCard && window.matchMedia('(hover: hover)').matches) {
+            tiltCard.addEventListener('mousemove', (e) => {
+                const rect = tiltCard.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                tiltCard.style.transform = `rotateY(${x * 14 - 4}deg) rotateX(${-y * 14 + 2}deg)`;
+            });
+            tiltCard.addEventListener('mouseleave', () => {
+                tiltCard.style.transform = '';
+            });
+        }
     </script>
 </body>
 </html>
