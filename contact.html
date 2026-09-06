@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Morning Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="app-icon-web.png">
+    <style>
+        .page-header {
+            padding-top: 140px;
+            padding-bottom: 60px;
+            text-align: center;
+            background-color: var(--bg-light);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .page-header .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            padding: 60px 40px;
+            max-width: 800px;
+            margin: -30px auto 60px;
+            background-color: var(--bg-white);
+            border-radius: 24px;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 8px;
+        }
+
+        .contact-card {
+            background: var(--bg-light);
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .contact-card .icon-box {
+            margin: 0 auto 20px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo-link">
+                <img src="logo-web.png" alt="The Morning Report" class="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://apps.apple.com/gb/app/the-morning-report/id6757605921" class="btn btn-primary btn-download-sm">
+                    Download App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="subtitle">Questions about the app, feedback on a report, or interested in partnering with us? We'd love to hear from you.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="contact-content">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="icon-box">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>General Support</h3>
+                    <p>Questions about your account, reports, or the app itself. We typically respond within 24 hours.</p>
+                    <a href="mailto:themorningreportinitiative@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Support
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon-box">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Schools &amp; Partnerships</h3>
+                    <p>Interested in bringing The Morning Report to your school, or partnering with us on financial literacy?</p>
+                    <a href="mailto:themorningreportinitiative@gmail.com?subject=Partnership%20Enquiry" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Start a Conversation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-bottom: 80px;">
+            <a href="index.html" class="btn btn-secondary">
+                &larr; Back to Home
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 The Morning Report Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
